@@ -1,0 +1,14 @@
+{% extends "bitirme.html" %}
+{% load static %}
+{% block content %}
+ <div class="container">
+    <form action="" method="POST" enctype="multipart/form-data" class="w-50 m-auto border p-3 mt-4 mb-4">
+        {% csrf_token %}
+        <label for="">Resim</label>
+        <input type="file" name="resim" id="" class="form-control">
+        <label for="">Ürün İsmi</label>
+        <input type="text" name="isim" id="" class="form-control" >
+        <input type="submit" value="Oluştur" class="btn btn-success mt-2">
+    </form>
+ </div>
+{% endblock content %}

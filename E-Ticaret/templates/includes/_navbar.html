@@ -1,0 +1,77 @@
+{% load static %}
+<div class="buyuk d-flex">
+    <div class="kisisel d-flex">
+      <ul class="kisiselul d-flex">
+        <li class="eklemeler"><i class="fa-solid fa-envelope"></i> guvenleal@gmail.com</li>
+        <li class="eklemeler"><i class="fa-solid fa-phone"></i> 0999 999 99 99</li>
+  
+      </ul>
+    </div>
+      <div class="kisiseliç">
+        <form action="" class="form1 d-flex">
+          <a href="#"><i class="fa-brands fa-facebook-f text-primary"></i></a>
+          <a href="#"><i class="fa-brands fa-linkedin-in text-dark"></i></a>
+          <a href="#"><i class="fa-brands fa-twitter text-info"></i></a>
+          <a href="#"><i class="fa-solid fa-globe text-warning"></i></a>
+          <a href="#"><i class="fa-brands fa-google-plus-g text-danger"></i></a>
+        </form>
+      </div>
+  </div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Güvenli Alışveriş</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="{% url 'index' %}">Ana Sayfa <span class="sr-only"></span></a>
+            </li>
+            <div class="dropdown">
+              <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Kategoriler
+              </button>
+              <ul class="dropdown-menu">
+                {% for i in kategori  %}
+                <li><a class="dropdown-item" href="{% url 'index' %}?search={{i.isim}}">{{i.isim}}</a></li>
+                {% endfor %}
+                
+              </ul>
+            </div>
+            <li class="nav-item">
+              <a class="nav-link" href="iletisim.html">İletişim</a>
+            </li>
+            
+            
+          </ul>
+        </div>
+        <div class="hesap">
+            <ul class="hesaplar d-flex">
+
+
+            {% if user.is_authenticated %}
+             <li><a href="#"><i class="fa-solid fa-user text-success"></i></a>{{request.user}}</li>
+             <li><a href="{% url 'olustur' %}" class="text-capitalize" ><i class="fa-solid fa-plus text-success"></i></a>Ekle</li>
+             <li><a href="#"><i class="fa-solid fa-cart-shopping text-success"></i></a> Sepet</li>
+             <li><a href="{% url 'logout' %}"><i class="fa-solid fa-lock text-success"></i></a> Çıkış yap</li>
+             {% else %}
+             <li><a href="{% url 'register' %}"><i class="fa-solid fa-user text-success"></i></a> Hesap</li>
+             <li><a href="{% url 'login' %}"><i class="fa-solid fa-lock text-success"></i></a> Giriş yap</li>
+             <li><a href="#"><i class="fa-solid fa-cart-shopping text-success"></i></a> Sepet</li>
+             {% endif %}
+             
+            
+              {% comment %} <li><a href="{% url 'register' %}"><i class="fa-solid fa-user text-success"></i></a> Hesap</li>
+              
+              <li><a href="{% url 'login' %}"><i class="fa-solid fa-lock text-success"></i></a> Giriş yap</li> {% endcomment %}
+            </ul>
+        </div>
+        <div class="form mx-5">
+          <form method="GET" class="form-inline d-flex">
+            <input class="form-control " type="search" name="search" placeholder="Ürün bul" aria-label="Search" value="{{search}}">
+            <button class="btn btn-outline-success mx-1 px-3" type="submit">Ürün bul</button>
+          </form>
+        </div>
+
+      </nav>

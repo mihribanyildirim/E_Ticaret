@@ -1,0 +1,276 @@
+body, html{
+    box-sizing: border-box;
+    width: 100%;
+    height: auto;
+}
+.kisisel .kisiselul li{
+    font-size: 10px;
+    list-style: none;
+    padding-left: 2px;
+    margin-left: 0;
+    margin-top: 10px;
+}
+.buyuk{
+    justify-content: space-between;
+}
+.kisiseliç{
+    margin-right: 40px;
+}
+.kisiseliç .form1 i{
+    margin: 10px 10px 0 40px;
+}
+.navbar .navbar-brand{
+    color: green;
+}
+.hesap ul li{
+    list-style: none;
+    padding-left: 5px;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+.accordion{
+    margin-top: 20px;
+    margin: auto;
+    text-align: left;
+}
+.container{
+    margin: auto;
+}
+.container .accordion a{
+    text-decoration: none;
+    color: black;
+}
+.cizgiailesi .cizgi{
+    width: 25%;
+    height: 0;
+    border: 1px solid lightgrey;
+    margin-top: 13px;
+    padding-left: 5px;
+}
+.cizgiailesi h5{
+    color: green;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.cizgiailesi{
+    margin-top: 20px;
+}
+.cizgiailesi2 .cizgi2{
+    width: 100%;
+    height: 0;
+    border: 1px solid lightgrey;
+    margin-top: 13px;
+    padding-left: 5px;
+}
+.cizgiailesi2 h5{
+    color: green;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.cizgiailesi2{
+    margin-top: 20px;
+}
+.zorcardlar{
+    margin: 0;
+    padding: 0;
+    float: left;
+}
+.zorcardlar2{
+    float: right;
+}
+.zorcardlar3{
+    float: left;
+}
+.zorcardlar, .zorcardlar2{
+    margin-top: 5px;
+}
+.card{
+    border: none;
+}
+.zorcardlar2 img{
+    height: 200px;
+}
+.contentt2tile img{
+    height: 300px;
+}
+.icerik h1{
+    color: green;
+    text-align: center;
+    margin-top: 80px;
+}
+.icerik p{
+    text-align: center;
+    margin-top: 80px;
+    margin-left: 30px;
+}
+.buton{
+    margin-left: 150px;
+}
+.ftr{
+    background-color: rgb(240, 232, 232);
+}
+.ftr .container{
+    justify-content: space-around;
+    padding-top: 15px;
+}
+.ftr .container p {
+    color: grey;
+    text-align: left;
+    line-height: normal;
+
+}
+.ftr .cizgi{
+    margin-left: 140px;
+}
+.ftr .container2{
+    margin-left: 100px;
+}
+.container2 .bes p{
+    line-height: 4mm;
+    color: grey;
+}
+.container2 .bes{
+    padding: 0;
+    margin: 0;
+}
+.container2 .bes .ozel{
+    line-height: normal;
+}
+.container2 .bes .btn{
+    color: white;
+}
+.ftr .sondiv{
+    background-color: rgb(204, 198, 198);
+    justify-content: space-between;
+}
+.ftr .sondiv .mini{
+    font-size: 13px;
+    padding-top: 2px;
+    padding-left: 5px;
+}
+.sondiv .soniki p a{
+    color: green;
+    font-weight: bold;
+    font-style: italic;
+    margin-right: 15px;
+}
+.sondiv .soniki .btn2{
+    border: none;
+    color: white;
+    width: 50px;
+}
+.col-8 .name, .email{
+    width: 33%;
+}
+.col-8 .iletisimbtn{
+    margin-left: 548px;
+    border: none;
+    background-color: green;
+    color: white;
+}
+.ilkcizgi{
+    margin-left: 116px;
+}
+.ilkcizgi .cizgi{
+    width: 26%;
+    height: 0;
+    margin-top: 15px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.ikincicizgi .cizgi{
+    width: 24%;
+    height: 0;
+    margin-top: 15px;
+    margin-left: 1px;
+    margin-right: 1px;
+}
+.col-4 .peler p{
+    text-align: left;
+    line-height: 2mm;
+}
+.icons a i{
+    font-size: 25px;
+    padding: 8px;
+    text-align: center;
+    margin-top: 15px;
+}
+.yanfoto{
+    background-image: url(kargobedava.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.yanfoto .btn{
+    position: absolute;
+    transform: translate(-50%, 540%);
+}
+.container .col-sm-12{
+    justify-content: space-between;
+    width: 1110px;
+    margin-left: 15px;
+}
+.indirimhead p{
+    font-size: 27px;
+}
+.indirimhead ul li{
+    font-size: 10px;
+}
+.ana{
+    height: 500px;
+    justify-content: space-around;
+}
+.ana .ana1{
+    width: 300px;
+    height: 250px;
+    margin: auto;
+}
+.ana .ana2{
+    width: 70px;
+    height: 70px;
+    margin: auto;
+    margin-top: 150px;
+    border-radius: 50%;
+}
+.ana2 .ana2h4{
+    margin: auto;
+    text-align: center;
+    margin-top: 20px;
+}
+.urun img{
+    width: 60px;
+}
+.aciklama .p1{
+    font-size: 13px;
+}
+.aciklama .p2{
+    font-size: 9px;
+}
+.aciklama p{
+    line-height: 0cm;
+}
+.select{
+    justify-content: space-around;
+}
+.uzun {
+    justify-content: space-between;
+}
+.anacheck {
+    justify-content: space-between;
+}
+.anacheck .middlecheck{
+    width: 49%;
+}
+.middlecheck .uzun {
+    background-color: lightgray;
+}
+@media screen and (max-width: 998px){
+    .zorcardlar, .zorcardlar2{
+        width: auto;
+        height: auto;
+    }
+}
+    @media screen and (max-width: 900px) {
+        
+    }

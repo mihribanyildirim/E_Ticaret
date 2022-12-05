@@ -1,0 +1,14 @@
+{% extends "bitirme.html" %}
+{% load static %}
+{% block content %}
+ <div class="container">
+    <form action="" method="POST" class="w-50 m-auto border mt-4 mb-4">
+        {% csrf_token %}
+        <label for="">Kullanıcı Adı</label>
+        <input type="text" name="username" class="form-control">
+        <label for="">Şifre</label>
+        <input type="password" name="password" id="" class="form-control">
+        <button type="submit" class="btn btn-success mt-2 mb-2">Giriş Yap</button>
+    </form>
+ </div>
+{% endblock content %}
